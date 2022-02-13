@@ -1,0 +1,15 @@
+.Obstacle {
+    width: 20px;
+    height: 20px;
+    /*background-color: yellow;*/
+    position: relative;
+    top: 130px;
+    left: 480px;
+    font-size: 100%;
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}

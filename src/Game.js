@@ -9,7 +9,11 @@ function Game() {
     const jump = () => {setInAir(true)}
 
     return (
-        <div className='Game' onClick={jump}>
+        <div className='Game'
+             onClick={jump}
+             onKeyDown={jump}
+             tabIndex={0}
+        >
             <Protagonist inAir={inAir}
                          setInAir={setInAir}
             />

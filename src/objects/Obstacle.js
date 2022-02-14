@@ -1,8 +1,10 @@
 import './Obstacle.css';
 
-function Obstacle() {
+function Obstacle(props) {
+    const additionalClass = props.isPlaying ? 'animate-move' : '';
+
     return (
-        <div className='Obstacle'>💩</div>
+        <div className={`Obstacle ${additionalClass}`}>{props.model}</div>
     )
 }
 

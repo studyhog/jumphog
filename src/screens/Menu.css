@@ -1,0 +1,12 @@
+.Menu {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background-color: red;
+}
+
+.playing {
+    display: none;
+}

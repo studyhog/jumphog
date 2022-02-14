@@ -4,12 +4,18 @@
     /*background-color: yellow;*/
     position: relative;
     top: 130px;
-    left: 480px;
     font-size: 100%;
-    animation: block 1.5s infinite linear;
+    /* Don't show obstacles unless they're moving to you
+       (i.e. game hasn't yet started). */
+    display: none;
+}
+
+.animate-move {
+    display: block;
+    animation: block 2s infinite linear;
 }
 
 @keyframes block{
-    0%{left: 500px}
-    100%{left: -20px}
+    0% {left: calc(100% - 20px)}
+    100% {left: -20px}
 }

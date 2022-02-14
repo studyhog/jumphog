@@ -1,3 +1,5 @@
 .Game {
+    position: relative;
     background-color: antiquewhite;
+    min-height: 100%;
 }

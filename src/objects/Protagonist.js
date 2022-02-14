@@ -1,14 +1,12 @@
 import './Protagonist.css';
 
 function Protagonist(props) {
-    const additionalClass = props.inAir ? 'animate' : '';
+    const additionalClass = props.inAir ? 'animate-jump' : '';
 
     return (
         <div className={`Protagonist ${additionalClass}`}
              onAnimationEnd={() => {props.setInAir(false)}}
-        >
-            🦔
-        </div>
+        >{props.model}</div>
     )
 }
 

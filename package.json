@@ -1,5 +1,6 @@
 {
   "name": "jumphog",
+  "homepage": "https://studyhog.github.io/jumphog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
